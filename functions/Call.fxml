@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="maintainPane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="functions.Call">
+   <children>
+      <TableView fx:id="maintainCall" layoutX="62.0" layoutY="53.0" prefHeight="450.0" prefWidth="878.0">
+        <columns>
+          <TableColumn fx:id="logNo" prefWidth="98.0" text="ID" />
+          <TableColumn fx:id="desc" prefWidth="627.6666870117188" text="Description" />
+            <TableColumn fx:id="status" prefWidth="152.33331298828125" text="Status" />
+        </columns>
+      </TableView>
+      <TextField fx:id="logDescription" layoutX="282.0" layoutY="533.0" prefHeight="25.0" prefWidth="481.0" promptText="Description">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="178.0" layoutY="536.0" prefHeight="21.0" prefWidth="94.0" text="Log a record">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="371.0" layoutY="16.0" prefHeight="17.0" prefWidth="219.0" text="Maintainance Log">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="addbtn" layoutX="788.0" layoutY="529.0" onMouseClicked="#newLog" style="-fx-background-color: black;" text="Add" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <ImageView fx:id="backarrow" fitHeight="21.0" fitWidth="47.0" layoutX="8.0" layoutY="19.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+         <image>
+            <Image url="@../res/arrow.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

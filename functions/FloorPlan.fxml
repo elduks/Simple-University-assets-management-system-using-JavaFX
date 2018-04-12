@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="floorplanpane" prefHeight="600.0" prefWidth="1000.0"  xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="functions.FloorPlan">
+    <ImageView fx:id="backarrow" fitHeight="21.0" fitWidth="47.0" layoutX="8.0" layoutY="19.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+        <image>
+            <Image url="@../res/arrow.png" />
+        </image>
+    </ImageView>
+   <ImageView fx:id="floor1Plan" fitHeight="494.0" fitWidth="833.0" layoutX="85.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../res/floor-plan1.png" />
+      </image>
+   </ImageView>
+   <JFXButton layoutX="177.0" layoutY="22.0" onMouseClicked="#floor1" prefHeight="48.0" prefWidth="86.0" style="-fx-background-color: white;" text="Floor 1">
+      <font>
+         <Font name="Arial Rounded MT Bold" size="17.0" />
+      </font>
+   </JFXButton>
+   <JFXButton layoutX="281.0" layoutY="22.0" onMouseClicked="#floor2" prefHeight="48.0" prefWidth="86.0" style="-fx-background-color: white;" text="Floor 2">
+      <font>
+         <Font name="Arial Rounded MT Bold" size="17.0" />
+      </font>
+   </JFXButton>
+   <JFXButton fx:id="floorDetails" layoutX="829.0" layoutY="31.0" onMouseClicked="#floorDetails" style="-fx-background-color: white;" text="View Floor Details &gt;&gt;">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </JFXButton>
+
+</Pane>

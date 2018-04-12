@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="minterface" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mInterface">
+   <children>
+      <JFXComboBox fx:id="dropd" layoutX="870.0" layoutY="14.0" onAction="#logout" prefHeight="25.0" prefWidth="116.0" promptText=" User" />
+      <JFXButton layoutX="85.0" layoutY="116.0" onMouseClicked="#call" prefHeight="205.0" prefWidth="252.0" style="-fx-background-color: black;" text="Maintanance &#10;Call" textAlignment="CENTER" textFill="#eeebeb">
+         <font>
+            <Font size="20.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="356.0" layoutY="116.0" onMouseClicked="#officemove" prefHeight="205.0" prefWidth="252.0" style="-fx-background-color: black;" text="request a &#10;office move" textAlignment="CENTER" textFill="#f2f0f0">
+         <font>
+            <Font size="20.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="626.0" layoutY="116.0" onMouseClicked="#floorPlan" prefHeight="205.0" prefWidth="252.0" style="-fx-background-color: black;" text="view&#10;Floor plan" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="511.0" layoutY="346.0" onMouseClicked="#FMO" prefHeight="205.0" prefWidth="252.0" style="-fx-background-color: black;" text="Generate &#10;FMO Report" textAlignment="CENTER" textFill="#eeeeee">
+         <font>
+            <Font size="20.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="222.0" layoutY="345.0" onMouseClicked="#assets" prefHeight="205.0" prefWidth="252.0" style="-fx-background-color: black;" text="Furniture&#10;Assets" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="748.0" layoutY="17.0" onMouseClicked="#newUser" style="-fx-background-color: black;" text="Create New User" textFill="#f8f0f0" />
+       
+   </children>
+</Pane>

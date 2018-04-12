@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="functions.AddNewRoom">
+   <children>
+      <ListView fx:id="total" layoutX="73.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" />
+      <ListView fx:id="selected" layoutX="365.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" />
+      <JFXButton layoutX="300.0" layoutY="160.0" onMouseClicked="#add" style="-fx-background-color: white;" text="&gt;&gt;" />
+      <JFXButton layoutX="300.0" layoutY="193.0" onMouseClicked="#remove" style="-fx-background-color: white;" text="&lt;&lt;" />
+      <TextField fx:id="room" layoutX="58.0" layoutY="39.0" prefHeight="25.0" prefWidth="64.0" />
+      <Label layoutX="7.0" layoutY="43.0" text="Room ID" />
+      <Label layoutX="134.0" layoutY="43.0" text="Department" />
+      <ComboBox fx:id="deparmentList" layoutX="202.0" layoutY="39.0" prefHeight="25.0" prefWidth="107.0" promptText="Science" />
+      <TextField fx:id="GFA" layoutX="546.0" layoutY="25.0" prefHeight="25.0" prefWidth="46.0" />
+      <Label layoutX="516.0" layoutY="29.0" text="GFA" />
+      <TextField fx:id="UFA" layoutX="547.0" layoutY="60.0" prefHeight="25.0" prefWidth="46.0" />
+      <Label layoutX="516.0" layoutY="64.0" text="UFA" />
+      <Label layoutX="318.0" layoutY="43.0" text="Space" />
+      <ComboBox fx:id="spaceList" layoutX="354.0" layoutY="39.0" prefHeight="25.0" prefWidth="151.0" promptText="Non-Usable" />
+      <Label layoutX="403.0" layoutY="77.0" text="Furnitures" />
+      <JFXButton layoutX="456.0" layoutY="332.0" onMouseClicked="#addnewRoom" style="-fx-background-color: black;" text="Add new Room" textFill="#e1dada" />
+   </children>
+</Pane>
